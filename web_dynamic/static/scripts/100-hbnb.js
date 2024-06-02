@@ -56,12 +56,12 @@ $(function () {
   });
 });
 
-function searchPlaces (amenities = [], states = [], cities = []) {
+function searchPlaces (amenitiesIds = [], statesIds = [], citiesIds = []) {
   $.ajax({
     url: 'http://0.0.0.0:5001/api/v1/places_search/',
     method: 'POST',
     contentType: 'application/json',
-    data: JSON.stringify({ amenities, states, cities }),
+    data: JSON.stringify({ amenities: amenitiesIds, states: statesIds, cities: citiesIds }),
     success: showPlaces
   });
 }

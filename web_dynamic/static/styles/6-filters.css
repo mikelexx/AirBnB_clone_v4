@@ -84,7 +84,12 @@ button:hover {
 .amenities .popover li input{
 	margin-right: 10px;
 }
-
+.locations .popover li input {
+	margin-right:10px;
+}
+.locations .popover h2 {
+	display:inline-block;
+}
 .locations .popover {
     margin-top: 0%;
 }
