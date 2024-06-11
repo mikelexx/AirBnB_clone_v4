@@ -1,6 +1,8 @@
 #!/usr/bin/python
 """ holds class Place"""
 import models
+from models.amenity import Amenity
+from models.review import Review
 from models.base_model import BaseModel, Base
 from os import getenv
 import sqlalchemy
